@@ -4,7 +4,7 @@ require_relative 'bike'
 require_relative 'rental'
 
 items = [:apple, :water, :protein_bar]
-
+luggage = Luggage.new(Luggage::DEFAULT_MAX_CAPACITY)
 bike = Bike.new(1, :pink, 99.99, items)
 
 rental = Rental.new(bike)
